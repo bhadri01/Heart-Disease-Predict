@@ -1,0 +1,65 @@
+{% extends 'main.html' %} {% block content %} {% if message %}
+<div class="alert alert-danger">{{ message }}</div>
+{% endif %}
+<style>
+  body {
+    font-family: Cambria;
+    height: 100%;
+    background-image: linear-gradient(#4e0374, #c37ee6);
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  h1 {
+    text-align: center;
+  }
+</style>
+<div class="container">
+  <div
+    class="card card-body"
+    style="
+      border: 1px solid black;
+      box-shadow: 0 0 10px black;
+      background-color: #edc8ff;
+    "
+  >
+    <h1>Smart Disease Predictor</h1>
+    <br />
+    <h2>Model Accuracies:</h2>
+    <ul>
+      <li>Heart Disease Model: <strong>98.70%</strong></li>
+    </ul>
+    <br />
+    <h3>Information about the Diseases:</h3>
+    <br />
+
+    <div class="row">
+      <div
+        class="col-md-12 card card-body"
+        style="
+          box-shadow: 0 0 5px black;
+          margin: 5px;
+          background-color: #daa8f4;
+        "
+      >
+        <h4>Heart/ Cardiovascular Disease</h4>
+        <p>
+          Cardiovascular disease (heart disease) refers to a group of diseases
+          that affect the heart and blood vessels of your body. These diseases
+          can affect one or many parts of your heart and /or blood vessels. A
+          person may be symptomatic (physically experience the disease) or be
+          asymptomatic (not feel anything at all).
+        </p>
+        <h5>Symptoms</h5>
+        <ul>
+          <li>Pounding or racing heart (palpitations)</li>
+          <li>Chest pain</li>
+          <li>Sweating</li>
+          <li>Lightheadedness</li>
+          <li>Shortness of breath</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
